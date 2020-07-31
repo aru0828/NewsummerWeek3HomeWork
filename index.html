@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/all.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <title>第三周主線任務</title>
 </head>
 
@@ -19,7 +20,7 @@
         </a>
 
         
-        <h1 class="logo">
+        <h1 class="logo" data-aos="fade-right">
                 <a href="">
                     Sweetaste
                 </a> 
@@ -29,7 +30,7 @@
             <img src="webLayoutTraining1st-master/student-week1/shopping_cart.png" alt="">
         </a>
 
-        <ul class="navbarList">
+        <ul class="navbarList" data-aos="fade-left">
             <li> <a href="#">首頁</a></li>
             <li> <a href="#">甜點</a></li>
             <li> <a href="#">登入</a></li>
@@ -39,7 +40,7 @@
         </ul>
     </div>
 
-    <div class="banner container">
+    <div class="banner container" data-aos="fade-up">
         <img src="https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/student-week1/banner.png"
             alt="">
     </div>
@@ -49,17 +50,17 @@
         <div class="category">
             <div class="categoryTitle">甜點類別</div>
             <ul class="categoryList">
-                <li class="active"><a href="#">所有甜點 (48)</a></li>
-                <li><a href="#">本日精選 (10)</a></li>
-                <li><a href="#">人氣推薦 (26)</a></li>
-                <li><a href="#">新品上市 (12)</a></li>
+                <li data-aos="fade-up" class="active"><a href="#">所有甜點 (48)</a></li>
+                <li data-aos="fade-up"><a href="#">本日精選 (10)</a></li>
+                <li data-aos="fade-up"><a href="#">人氣推薦 (26)</a></li>
+                <li data-aos="fade-up"><a href="#">新品上市 (12)</a></li>
             </ul>
         </div>
 
         <div class="product">
 
             <ul class="productList">
-                <li>
+                <li data-aos="flip-left">
                     
                         <div class="productImg">
                             <div class="tag">本日精選</div>
@@ -82,7 +83,7 @@
                         <a href="" class="addCart">加入購物車</a>
                     
                 </li>
-                <li>
+                <li data-aos="flip-left">
                     
                         <div class="productImg">
                             <div class="tag">本日精選</div>
@@ -103,7 +104,7 @@
                         <a href="" class="addCart">加入購物車</a>
                     
                 </li>
-                <li>
+                <li data-aos="flip-left">
                     
                         <div class="productImg">
                             <div class="tag">本日精選</div>
@@ -124,7 +125,7 @@
                         <a href="" class="addCart">加入購物車</a>
                     
                 </li>
-                <li>
+                <li data-aos="flip-left">
                     
                         <div class="productImg">
                             <div class="tag">本日精選</div>
@@ -145,7 +146,7 @@
                         <a href="" class="addCart">加入購物車</a>
                     
                 </li>
-                <li>
+                <li data-aos="flip-left">
                     
                         <div class="productImg">
                             <div class="tag">本日精選</div>
@@ -166,7 +167,7 @@
                         <a href="" class="addCart">加入購物車</a>
                     
                 </li>
-                <li>
+                <li data-aos="flip-left">
                     
                         <div class="productImg">
                             <div class="tag">本日精選</div>
@@ -204,7 +205,7 @@
     </div>
 
     
-    <div class="subscribe">
+    <div class="subscribe" data-aos="fade-down" data-aos-duration="2000">
         <div class="container">
             <div class="subscribeLeft">
                 <img src="webLayoutTraining1st-master/student-week1/logo-light.svg" alt="">
@@ -232,7 +233,7 @@
 
 
 
-    <div class="footer">
+    <div class="footer" data-aos="fade-down" data-aos-duration="2000">
         <div class="footerLeft">
             <img class="footerLogo" src="webLayoutTraining1st-master/student-week1/logotype-lg-dark.svg" alt="">
 
@@ -267,7 +268,10 @@
         </div>
     </div>
 
-
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
 </body>
 
 
