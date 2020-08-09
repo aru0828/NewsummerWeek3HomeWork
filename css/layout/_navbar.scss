@@ -1,0 +1,77 @@
+
+.navbar{
+	display:flex;
+	justify-content:space-between;
+	margin-bottom: 30px;
+
+	.logo a{
+		display:block;
+		text-indent: 101%;
+		overflow: hidden;
+		white-space: nowrap;
+		background-image: url("https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/student-week1/logo-all-dark.svg");
+		background-repeat: no-repeat;
+		width: 211.22px;
+		height: 40px;
+	}
+
+	.logo img{
+		
+		display: block;
+	}
+
+
+	.dropdownMenu{
+		display:none;
+	}
+
+
+	.cartBtn{
+		display:none;
+	}
+
+	.navbarList{
+		font-weight: bolder;
+		display:flex;
+		align-items: center;
+
+		li{
+			margin-right: 60px;
+			a{
+				color: $primary-dark;}
+			
+		}
+		li:nth-last-child(2){
+			margin-right: 79px;
+		}
+		li:last-child{
+			margin-right: 0;
+		}
+
+	}
+}
+
+@media(max-width:575px){
+	.navbar{
+		justify-content: space-around;
+		align-items: center;
+		.logo a{
+			background-image: url("../webLayoutTraining1st-master/student-week1/logotype-lg-dark.svg");
+			width: 114px;
+			height: 18px;
+		}
+
+		.cartBtn{
+			display:block;
+			align-self: center;
+		}
+
+		.dropdownMenu{
+			display:block;
+			align-self: center;
+		}
+		.navbarList{
+			display:none;
+		}
+	}
+}

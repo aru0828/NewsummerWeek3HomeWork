@@ -1,0 +1,135 @@
+
+
+.invoiceMain{
+    width:780px;
+    margin:0 auto;
+    display:flex;
+
+    .invoiceForm{
+        align-self: flex-start;
+        width: 60%;
+        background: $primary-dark;
+        padding:30px 40px 0px 40px;
+        display:flex;
+        flex-wrap:wrap;
+        align-content: start;
+        position: relative;
+        margin-right: 20px;
+
+        .invoiceFormTitle{
+            color:white;
+            font-size: $font-size-XL;
+            font-weight: bolder;
+            width: 50%;
+            height: 40px;
+            margin-bottom: 30px;
+        }
+
+        .invoiceFormProcess{
+            width: 50%;
+            height: 40px;
+            background: pink;
+        }
+
+        .invoiceFormChioce{
+            width: 100%;
+            display:flex;
+            margin-bottom: 30px;
+           a{   
+               text-align: center;
+               display:block;
+               width: 50%;
+               padding:14px 55px;
+               color:$primary-light;
+               border:1px solid $primary-light;
+               font-weight: bolder;
+               background: transparent;
+           }
+           a.active{
+               background: $primary-light;
+               color:$primary-dark;
+           }
+        }
+        .invoiceFromInputgroup{
+            width: 100%;
+            margin-bottom: 16px;
+            label{
+                color:white;
+                font-weight:bolder;
+                display:block;
+                margin-bottom: 8px;
+            }
+            input{
+                width: 100%;
+            }
+        }
+
+        .invoiceFormSubmit{
+            position: absolute;
+            width: 100%;
+            bottom:-63px;
+            left:0px;
+            background: #FFE180;
+            font-size:$font-size-L;
+            color:$primary-dark;
+            padding:19px 0 13px 0;
+            //取消button預設樣式
+            margin: 0;
+            border: 1px solid transparent;  //自定义边框
+            outline: none;    //消除默认点击蓝色边框效果
+        }
+
+        .invoiceFromInputgroup::last-child{
+            margin-bottom: 30px;
+        }
+    }
+
+    .invoiceOrder{
+        width: 40%;
+        
+
+        .invoiceOrderSection{
+            border:1px solid $primary-light;
+            padding:16px 20px;
+        }
+ 
+        .invoiceOrderTitle{
+            text-align: center;
+            font-size:$font-size-L;
+            color:#8DA291;
+            background: $primary-light;
+            padding:16px 0;
+        }
+
+
+        .invoiceOrderSection{
+            margin-bottom: 20px;
+            table, tbody{
+                display:block;
+            }
+            tr{
+                width: 100%;
+                display:flex;
+                margin-bottom: 8px;
+                td{
+                    display:block;
+                    width: 50%;
+                    color:#8DA291;
+                }
+                td:nth-child(even){
+                    text-align: right;
+                }
+            }
+            tr:last-nth-child(2){
+                margin-bottom: 16px;
+            }
+
+            .total td{
+                font-size:$font-size-M;
+                color:#8DA291;
+                font-weight: bolder;
+            }
+           
+        }
+    }
+}

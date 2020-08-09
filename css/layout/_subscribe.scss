@@ -1,0 +1,99 @@
+
+.subscribe{
+    max-width: 1024px;
+    margin:0 auto;
+    background: $primary-dark;
+    padding:0px 122px;
+
+    img{
+        display:block;
+    }
+
+    .container{
+        display:flex;
+
+    }
+
+    .subscribeLeft{
+        display:flex; 
+        align-items: center;
+        margin-right: 124px;
+
+        p{
+            color:white;
+            font-size: 24px;
+        }
+    
+        img{
+            width: 40px;
+            height: 40px;
+            margin-right: 20px;
+        }
+    }
+    
+    
+
+    .inputGroup{
+        max-width: 380px;
+        background: $primary-light;
+        display:table;
+        border-collapse: collapse;
+        margin:30px 0px;
+
+         > div{
+                display:table-cell;
+                vertical-align: middle;
+        }
+
+        .inputWrap input{
+            background: $primary-light;
+            border:0px;
+            width: 100%;
+            font-size:24px;
+        }
+
+        input:focus{
+            outline: none;
+        }
+
+        .inputIcon{
+            width: 64px;
+            height: 56px;
+        }
+
+        .emailIcon{
+            padding:16px 20px;
+        }
+
+        .arrowIcon{
+            background: #FFE180;
+            padding:20px 24px;
+        }
+	}
+	
+
+	@media(max-width:992px){
+		.container{
+			flex-direction: column;
+			padding-top: 30px;
+		}
+
+		.subscribeLeft{
+			margin-right: 0;
+			align-self: center;
+		}
+
+		.subscribeRight{
+			align-self: center;
+		}
+	}
+}
+
+@media(max-width:575px){
+	.subscribe{
+		padding:0 30px;
+	}
+}
+
+
+

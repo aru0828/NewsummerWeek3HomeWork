@@ -166,6 +166,210 @@ img {
   }
 }
 
+.subscribe {
+  max-width: 1024px;
+  margin: 0 auto;
+  background: #3F5D45;
+  padding: 0px 122px;
+}
+
+.subscribe img {
+  display: block;
+}
+
+.subscribe .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.subscribe .subscribeLeft {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-right: 124px;
+}
+
+.subscribe .subscribeLeft p {
+  color: white;
+  font-size: 24px;
+}
+
+.subscribe .subscribeLeft img {
+  width: 40px;
+  height: 40px;
+  margin-right: 20px;
+}
+
+.subscribe .inputGroup {
+  max-width: 380px;
+  background: #EAF0ED;
+  display: table;
+  border-collapse: collapse;
+  margin: 30px 0px;
+}
+
+.subscribe .inputGroup > div {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.subscribe .inputGroup .inputWrap input {
+  background: #EAF0ED;
+  border: 0px;
+  width: 100%;
+  font-size: 24px;
+}
+
+.subscribe .inputGroup input:focus {
+  outline: none;
+}
+
+.subscribe .inputGroup .inputIcon {
+  width: 64px;
+  height: 56px;
+}
+
+.subscribe .inputGroup .emailIcon {
+  padding: 16px 20px;
+}
+
+.subscribe .inputGroup .arrowIcon {
+  background: #FFE180;
+  padding: 20px 24px;
+}
+
+@media (max-width: 992px) {
+  .subscribe .container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding-top: 30px;
+  }
+  .subscribe .subscribeLeft {
+    margin-right: 0;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+  }
+  .subscribe .subscribeRight {
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+  }
+}
+
+@media (max-width: 575px) {
+  .subscribe {
+    padding: 0 30px;
+  }
+}
+
+.footer {
+  margin: 0 auto;
+  background: #EAF0ED;
+  max-width: 1024px;
+  padding: 28px 122px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.footer img {
+  display: block;
+}
+
+.footer .footerLeft {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 9px;
+}
+
+.footer .footerLeft .footerLogo {
+  width: 171px;
+  margin-bottom: 115.5px;
+}
+
+.footer .footerLeft .footerContactTxt {
+  line-height: 1.5rem;
+  color: #3F5D45;
+  margin-bottom: 30px;
+}
+
+.footer .footerLeft .footerIconList {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.footer .footerLeft .footerIconList img {
+  width: 32px;
+  margin-right: 8px;
+}
+
+.footer .footerRight {
+  width: 300px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  color: #3F5D45;
+}
+
+.footer .footerRight .footerSlogn {
+  width: 60px;
+  height: 219px;
+}
+
+@media (max-width: 575px) {
+  .footer {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    padding: 39px 0 30px 30px;
+  }
+  .footer .footerLeft {
+    margin-bottom: 23px;
+  }
+  .footer .footerLeft .footerLogo {
+    margin-bottom: 39px;
+  }
+  .footer .footerRight {
+    width: auto;
+  }
+  .footer .footerRight .footerSlogn {
+    display: none;
+  }
+}
+
 .banner {
   margin-bottom: 60px;
 }
@@ -431,207 +635,154 @@ img {
   }
 }
 
-.subscribe {
-  max-width: 1024px;
+.invoiceMain {
+  width: 780px;
   margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.invoiceMain .invoiceForm {
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+  width: 60%;
   background: #3F5D45;
-  padding: 0px 122px;
-}
-
-.subscribe img {
-  display: block;
-}
-
-.subscribe .container {
+  padding: 30px 40px 0px 40px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-}
-
-.subscribe .subscribeLeft {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  margin-right: 124px;
-}
-
-.subscribe .subscribeLeft p {
-  color: white;
-  font-size: 24px;
-}
-
-.subscribe .subscribeLeft img {
-  width: 40px;
-  height: 40px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-line-pack: start;
+      align-content: start;
+  position: relative;
   margin-right: 20px;
 }
 
-.subscribe .inputGroup {
-  max-width: 380px;
-  background: #EAF0ED;
-  display: table;
-  border-collapse: collapse;
-  margin: 30px 0px;
-}
-
-.subscribe .inputGroup > div {
-  display: table-cell;
-  vertical-align: middle;
-}
-
-.subscribe .inputGroup .inputWrap input {
-  background: #EAF0ED;
-  border: 0px;
-  width: 100%;
-  font-size: 24px;
-}
-
-.subscribe .inputGroup input:focus {
-  outline: none;
-}
-
-.subscribe .inputGroup .inputIcon {
-  width: 64px;
-  height: 56px;
-}
-
-.subscribe .inputGroup .emailIcon {
-  padding: 16px 20px;
-}
-
-.subscribe .inputGroup .arrowIcon {
-  background: #FFE180;
-  padding: 20px 24px;
-}
-
-@media (max-width: 992px) {
-  .subscribe .container {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    padding-top: 30px;
-  }
-  .subscribe .subscribeLeft {
-    margin-right: 0;
-    -ms-flex-item-align: center;
-        -ms-grid-row-align: center;
-        align-self: center;
-  }
-  .subscribe .subscribeRight {
-    -ms-flex-item-align: center;
-        -ms-grid-row-align: center;
-        align-self: center;
-  }
-}
-
-@media (max-width: 575px) {
-  .subscribe {
-    padding: 0 30px;
-  }
-}
-
-.footer {
-  margin: 0 auto;
-  background: #EAF0ED;
-  max-width: 1024px;
-  padding: 28px 122px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-}
-
-.footer img {
-  display: block;
-}
-
-.footer .footerLeft {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  margin-top: 9px;
-}
-
-.footer .footerLeft .footerLogo {
-  width: 171px;
-  margin-bottom: 115.5px;
-}
-
-.footer .footerLeft .footerContactTxt {
-  line-height: 1.5rem;
-  color: #3F5D45;
+.invoiceMain .invoiceForm .invoiceFormTitle {
+  color: white;
+  font-size: 36px;
+  font-weight: bolder;
+  width: 50%;
+  height: 40px;
   margin-bottom: 30px;
 }
 
-.footer .footerLeft .footerIconList {
+.invoiceMain .invoiceForm .invoiceFormProcess {
+  width: 50%;
+  height: 40px;
+  background: pink;
+}
+
+.invoiceMain .invoiceForm .invoiceFormChioce {
+  width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  margin-bottom: 30px;
 }
 
-.footer .footerLeft .footerIconList img {
-  width: 32px;
-  margin-right: 8px;
+.invoiceMain .invoiceForm .invoiceFormChioce a {
+  text-align: center;
+  display: block;
+  width: 50%;
+  padding: 14px 55px;
+  color: #EAF0ED;
+  border: 1px solid #EAF0ED;
+  font-weight: bolder;
+  background: transparent;
 }
 
-.footer .footerRight {
-  width: 300px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: end;
-      -ms-flex-align: end;
-          align-items: flex-end;
+.invoiceMain .invoiceForm .invoiceFormChioce a.active {
+  background: #EAF0ED;
   color: #3F5D45;
 }
 
-.footer .footerRight .footerSlogn {
-  width: 60px;
-  height: 219px;
+.invoiceMain .invoiceForm .invoiceFromInputgroup {
+  width: 100%;
+  margin-bottom: 16px;
 }
 
-@media (max-width: 575px) {
-  .footer {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-align: start;
-        -ms-flex-align: start;
-            align-items: flex-start;
-    padding: 39px 0 30px 30px;
-  }
-  .footer .footerLeft {
-    margin-bottom: 23px;
-  }
-  .footer .footerLeft .footerLogo {
-    margin-bottom: 39px;
-  }
-  .footer .footerRight {
-    width: auto;
-  }
-  .footer .footerRight .footerSlogn {
-    display: none;
-  }
+.invoiceMain .invoiceForm .invoiceFromInputgroup label {
+  color: white;
+  font-weight: bolder;
+  display: block;
+  margin-bottom: 8px;
+}
+
+.invoiceMain .invoiceForm .invoiceFromInputgroup input {
+  width: 100%;
+}
+
+.invoiceMain .invoiceForm .invoiceFormSubmit {
+  position: absolute;
+  width: 100%;
+  bottom: -63px;
+  left: 0px;
+  background: #FFE180;
+  font-size: 24px;
+  color: #3F5D45;
+  padding: 19px 0 13px 0;
+  margin: 0;
+  border: 1px solid transparent;
+  outline: none;
+}
+
+.invoiceMain .invoiceForm .invoiceFromInputgroup::last-child {
+  margin-bottom: 30px;
+}
+
+.invoiceMain .invoiceOrder {
+  width: 40%;
+}
+
+.invoiceMain .invoiceOrder .invoiceOrderSection {
+  border: 1px solid #EAF0ED;
+  padding: 16px 20px;
+}
+
+.invoiceMain .invoiceOrder .invoiceOrderTitle {
+  text-align: center;
+  font-size: 24px;
+  color: #8DA291;
+  background: #EAF0ED;
+  padding: 16px 0;
+}
+
+.invoiceMain .invoiceOrder .invoiceOrderSection {
+  margin-bottom: 20px;
+}
+
+.invoiceMain .invoiceOrder .invoiceOrderSection table, .invoiceMain .invoiceOrder .invoiceOrderSection tbody {
+  display: block;
+}
+
+.invoiceMain .invoiceOrder .invoiceOrderSection tr {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 8px;
+}
+
+.invoiceMain .invoiceOrder .invoiceOrderSection tr td {
+  display: block;
+  width: 50%;
+  color: #8DA291;
+}
+
+.invoiceMain .invoiceOrder .invoiceOrderSection tr td:nth-child(even) {
+  text-align: right;
+}
+
+.invoiceMain .invoiceOrder .invoiceOrderSection tr:last-nth-child(2) {
+  margin-bottom: 16px;
+}
+
+.invoiceMain .invoiceOrder .invoiceOrderSection .total td {
+  font-size: 20px;
+  color: #8DA291;
+  font-weight: bolder;
 }
 /*# sourceMappingURL=all.css.map */
