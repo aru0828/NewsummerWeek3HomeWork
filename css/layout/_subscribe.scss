@@ -1,6 +1,6 @@
 
 .subscribe{
-    max-width: 1024px;
+   
     margin:0 auto;
     background: $primary-dark;
     padding:0px 122px;
@@ -10,8 +10,9 @@
     }
 
     .container{
+        max-width:780px;
         display:flex;
-
+        justify-content: space-around;
     }
 
     .subscribeLeft{
@@ -86,7 +87,12 @@
 		.subscribeRight{
 			align-self: center;
 		}
-	}
+    }
+    
+    @include pad{
+        padding:28px 60px;
+    }
+
 }
 
 @media(max-width:575px){

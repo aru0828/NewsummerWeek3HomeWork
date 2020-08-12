@@ -6,7 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/all.css">
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-    <title>第三周主線任務</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css" integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc" crossorigin="anonymous">
+    <title>第五周主線任務</title>
 </head>
 
 
@@ -31,7 +32,7 @@
         </a>
 
         <ul class="navbarList" data-aos="fade-left">
-            <li> <a href="#">首頁</a></li>
+            <li> <a href="index.html">首頁</a></li>
             <li> <a href="#">甜點</a></li>
             <li> <a href="#">登入</a></li>
             <li> <a href="#"> <img
@@ -43,9 +44,18 @@
 
     <div class="invoiceMain">
         <form class="invoiceForm">
-
+            
             <h2 class="invoiceFormTitle">發票</h2>
-            <div class="invoiceFormProcess"></div>
+            <div class="invoiceFormProcess">
+                <i class="fas fa-check-circle"></i>
+                <hr>
+                <i class="fas fa-check-circle"></i>
+                <hr>
+                    <div class="processCircleOut">
+                        <i class="far fa-circle"></i>
+                    </div>
+                
+            </div>
 
             <div class="invoiceFormChioce">
                 <a class="active" href="#">電子發票</a>
@@ -56,25 +66,26 @@
                 <label for="">
                     電子郵件信箱
                 </label>
-                <input type="text">
+                <input type="text" placeholder="example@gmail.com">
             </div>
 
             <div class="invoiceFromInputgroup">
                 <label for="">
                     統一編號 (選填)
                 </label>
-                <input type="text">
+                <input type="text" placeholder="12345678">
             </div>
-
-            <button class="invoiceFormSubmit"type="submit">確認結帳</button>
+            
+            <button class="invoiceFormSubmit" type="submit">確認結帳</button>
 
         </form>
+
         <div class="invoiceOrder">
 
             <div class="invoiceOrderTitle">
                 訂單摘要
             </div>
-            <div class="invoiceOrderSection">
+            <div class="invoiceOrderSection invoiceOrderMoney">
                 <table>
                     <tr>
                         <td>小記</td>
@@ -94,8 +105,29 @@
             <div class="invoiceOrderTitle">
                 購物清單
             </div>
-            <ul class="invoiceOrderSection">
-                
+
+            <ul class="invoiceOrderSection invoiceOrderList">
+                <li>
+                    <img src="https://bit.ly/2QvsT63"  alt="">
+                    <div class="invoiceOrderListTxt">
+                        <p>焦糖馬卡龍（2）</p>
+                        <p class="money">NT$ 900</p>
+                    </div>
+                </li>
+                <li>
+                    <img src="https://bit.ly/2zBDAxX"  alt="">
+                    <div class="invoiceOrderListTxt">
+                        <p>焦糖馬卡龍（2）</p>
+                        <p class="money">NT$ 900</p>
+                    </div>
+                </li>
+                <li>
+                    <img src="https://bit.ly/2zKOP7w"  alt="">
+                    <div class="invoiceOrderListTxt">
+                        <p>焦糖馬卡龍（2）</p>
+                        <p class="money">NT$ 900</p>
+                    </div>
+                </li>
             </ul>
             
             
@@ -131,38 +163,41 @@
 
 
     <div class="footer" data-aos="fade-down" data-aos-duration="2000">
-        <div class="footerLeft">
-            <img class="footerLogo" src="webLayoutTraining1st-master/student-week1/logotype-lg-dark.svg" alt="">
-
-            <div class="footerContact">
-                <ul class="footerContactTxt">
-                    <li> 07-1234-5678</li>
-                    <li>sweetaste@email.com</li>
-                    <li>800 高雄市新興區幸福路 520 號</li>                     
-                </ul>
-
-                <ul class="footerIconList" id="test"> 
-                    <li>
-                        <a href="#">
-                            <img src="webLayoutTraining1st-master/student-week1/ic-line@.svg" alt="">
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#">
-                            <img src="webLayoutTraining1st-master/student-week1/ic-facebook.svg" alt="">
-                        </a>
-                    </li>
+        <div class="footerContainer">
+            <div class="footerLeft">
+                <img class="footerLogo" src="webLayoutTraining1st-master/student-week1/logotype-lg-dark.svg" alt="">
+    
+                <div class="footerContact">
+                    <ul class="footerContactTxt">
+                        <li> 07-1234-5678</li>
+                        <li>sweetaste@email.com</li>
+                        <li>800 高雄市新興區幸福路 520 號</li>                     
+                    </ul>
+    
+                    <ul class="footerIconList" id="test"> 
+                        <li>
+                            <a href="#">
+                                <img src="webLayoutTraining1st-master/student-week1/ic-line@.svg" alt="">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="webLayoutTraining1st-master/student-week1/ic-facebook.svg" alt="">
+                            </a>
+                        </li>
+                       
+                       
+                    </ul>
                    
-                   
-                </ul>
-               
+                </div>
+            </div>
+    
+            <div class="footerRight">
+                <img class="footerSlogn" src="webLayoutTraining1st-master/student-week1/sm-今天是個吃甜點的好日子.svg" alt="">
+                <p>© 2018 Sweetaste* All Rights Reserved</p>
             </div>
         </div>
-
-        <div class="footerRight">
-            <img class="footerSlogn" src="webLayoutTraining1st-master/student-week1/sm-今天是個吃甜點的好日子.svg" alt="">
-            <p>© 2018 Sweetaste* All Rights Reserved</p>
-        </div>
+        
     </div>
 
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>

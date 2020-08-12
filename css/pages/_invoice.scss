@@ -1,20 +1,25 @@
 
 
 .invoiceMain{
-    width:780px;
+    max-width:780px;
     margin:0 auto;
     display:flex;
+    margin-bottom: 60px;
+    flex-wrap:wrap;
+    justify-content: space-between;
 
+   
     .invoiceForm{
         align-self: flex-start;
-        width: 60%;
+        width: 58%;
         background: $primary-dark;
         padding:30px 40px 0px 40px;
         display:flex;
         flex-wrap:wrap;
         align-content: start;
         position: relative;
-        margin-right: 20px;
+       
+     
 
         .invoiceFormTitle{
             color:white;
@@ -28,7 +33,27 @@
         .invoiceFormProcess{
             width: 50%;
             height: 40px;
-            background: pink;
+            display:flex;
+            align-items: center;
+            justify-content: space-between;
+            color:$primary-light;
+            hr{
+                border: 1px solid $primary-light;
+                width: 69px;
+                margin: 0;
+            }
+            i:last-child{
+                font-size: 14px;
+                color:$primary-dark;
+                background: $primary-light;
+                border-radius: 50%;
+                border: 1.5px solid $primary-light;
+            }
+            @include pad{
+                hr{
+                    width: 120px;
+                }
+            }
         }
 
         .invoiceFormChioce{
@@ -39,9 +64,10 @@
                text-align: center;
                display:block;
                width: 50%;
-               padding:14px 55px;
+               padding:14px 0px;
                color:$primary-light;
                border:1px solid $primary-light;
+               font-size:$font-size-M;
                font-weight: bolder;
                background: transparent;
            }
@@ -55,12 +81,16 @@
             margin-bottom: 16px;
             label{
                 color:white;
-                font-weight:bolder;
+                font-weight:bold;
                 display:block;
                 margin-bottom: 8px;
             }
             input{
                 width: 100%;
+                padding-left:20px;
+                background: $primary-light;
+                border:0px;
+                height: 56px;
             }
         }
 
@@ -71,6 +101,7 @@
             left:0px;
             background: #FFE180;
             font-size:$font-size-L;
+            font-weight: bolder;
             color:$primary-dark;
             padding:19px 0 13px 0;
             //取消button預設樣式
@@ -82,27 +113,39 @@
         .invoiceFromInputgroup::last-child{
             margin-bottom: 30px;
         }
+
+        @include pad{
+            width: 80%;
+            margin:0 auto 82px auto;
+            
+        }
+
+        @include mobile{
+            width: 100%;
+            margin-bottom: 0px;
+        }
     }
 
     .invoiceOrder{
         width: 40%;
         
 
-        .invoiceOrderSection{
+        &Section{
             border:1px solid $primary-light;
             padding:16px 20px;
         }
  
-        .invoiceOrderTitle{
+        &Title{
             text-align: center;
             font-size:$font-size-L;
             color:#8DA291;
             background: $primary-light;
+            font-weight: bolder;
             padding:16px 0;
         }
 
 
-        .invoiceOrderSection{
+        &Section.invoiceOrderMoney{
             margin-bottom: 20px;
             table, tbody{
                 display:block;
@@ -124,12 +167,51 @@
                 margin-bottom: 16px;
             }
 
-            .total td{
-                font-size:$font-size-M;
-                color:#8DA291;
-                font-weight: bolder;
+            .total {
+                margin-top: 16px;
+                td{
+                    font-size:$font-size-M;
+                    color:#8DA291;
+                    font-weight: bolder;
+                }
             }
            
+        }
+
+        .invoiceOrderSection.invoiceOrderList{
+            li{
+                display:flex;
+                align-items: center;
+                margin-bottom: 16px;
+                background-size: cover;
+
+                img{
+                    width: 120px;
+                    height: 80px;
+                    margin-right: 20px;
+                }
+
+                .invoiceOrderListTxt{
+                    color:#8DA291;
+                    line-height: 20px;
+                }
+
+                .money{
+                    margin-top: 3px;
+                    font-size:$font-size-M;
+                    font-weight: bolder;
+                }
+
+
+            }
+        }
+        @include pad{
+            width: 80%;
+            margin:0 auto;
+        }
+
+        @include mobile{
+            display:none;
         }
     }
 }

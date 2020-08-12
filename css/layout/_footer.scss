@@ -1,11 +1,21 @@
 
 .footer{
-    margin:0 auto;
+   
     background: $primary-light;
-    max-width: 1024px;
     padding:28px 122px;
-    display:flex;
-    justify-content: space-between;
+    
+
+    .footerContainer{
+        max-width:780px;
+        margin:0 auto;
+        display:flex;
+        justify-content: space-between;
+
+
+        @include pad{
+            justify-content: space-around;
+        }
+    }
 
     img{
         display:block;
@@ -51,16 +61,24 @@
         }
     }
 
+    @include pad{
+        padding:28px 60px;
+    }
+
     
 }
 
 
-@media(max-width:575px){
-	.footer{
+@media(max-width:375px){
+    .footer{
+        padding: 28px 0px;
+    }
+    
+	.footerContainer{
 		
 		flex-direction: column;
 		align-items: flex-start;
-		padding:39px 0 30px 30px;
+		padding:0px 0 30px 30px;
 	
 
 		.footerLeft{

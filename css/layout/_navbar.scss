@@ -38,7 +38,13 @@
 		li{
 			margin-right: 60px;
 			a{
-				color: $primary-dark;}
+				color: $primary-dark;
+				padding:12px 0;
+
+			}
+			a:hover{
+				box-shadow: 0 5px  $primary-dark;	
+			}
 			
 		}
 		li:nth-last-child(2){
